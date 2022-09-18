@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10rem;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+img {
+    width: 521px;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.5;
+
+}
+
+.container_2 {
+    display: flex;
+    flex-direction: column;
+    width: 430;
+    height: 430px;
+    display: block;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 0 0 10px;
+    padding: 5rem;
+}
+
+.title {
+    color: hsl(277, 64%, 61%);
+}
+
+.container_3 {
+    background-color: hsl(277, 64%, 61%);
+    width: 430;
+    height: 430px;
+    border-radius: 0 10px 10px 0;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.comments {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 1.5rem 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+
+.description {
+    display: flex;
+    gap: 4rem;
+}
+
+.description .text {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 11px;
+    margin: 0.5rem 0;
+}
+
+.description .number {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*-----------------------------------------------*/
+@media screen and (max-width:580px) {
+    body {
+        padding: 5rem 1rem;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container_3 {
+        border-radius: 10px 10px 0 0;
+        height: 30%;
+        margin: 0;
+    }
+
+    .container_2 {
+        border-radius: 0 0 10px 10px;
+        height: 70%;
+        margin: 0;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
